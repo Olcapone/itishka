@@ -1,0 +1,23 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+@import './example';
+
+// utils
+@import "./utils/mixin";
+@import "./utils/variables";
+@import "./utils/visually_hidden";
+
+//base
+@import "./base/common";
+@import "./base/container";
+
+//components
+
+@import "./components/burger-menu";
+
+
+@import './header';
