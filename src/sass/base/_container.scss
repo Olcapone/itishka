@@ -3,10 +3,6 @@
    height: 100%;
    padding: 0px 15px 0px 15px;
 
-   .navigation & {
-    @include aligh(flex, center);
-    justify-content: space-between;
-   }
 
    @include screen("mobi") {
      width: 480px;
