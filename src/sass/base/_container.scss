@@ -31,10 +31,10 @@
    @include screen("desktop") {
      width: 1200px;
 
-     .navigation &,
-     .footer & {
-     //  justify-content: center;
-      // flex-direction: row;
-     }
+    //  .navigation &,
+    //  .footer & {
+    //    justify-content: center;
+    //    flex-direction: row;
+    //  }
    }
  }
