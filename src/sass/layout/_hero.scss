@@ -1,6 +1,5 @@
 .banner {
   max-width: 1600px;
-  // height: 400px;
   padding: 50px 0px 50px 0px;
 
   background: getColor('footer-bgc');
@@ -9,10 +8,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-
-  @include screen('desktop') {
-    // height: 600px;
-  }
 }
 
 .wrapper {
@@ -20,8 +15,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  // height: 100vh;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -38,6 +31,10 @@
 
   & h1 {
     color: getColor('accent');
-    @include font(48px, 600, 1.17);
+    @include font(32px, 500, 1.17);
+
+    @include screen('desktop') {
+      @include font(48px, 600, 1.17);
+    }
   }
 }
