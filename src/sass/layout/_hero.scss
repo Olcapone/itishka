@@ -1,47 +1,43 @@
 .banner {
   max-width: 1600px;
- // height: 400px;
+  // height: 400px;
   padding: 50px 0px 50px 0px;
-  
- 
-  background: getColor("footer-bgc");
-  background-image: var(--primary-gradient), url("../images/photo.jpg");
 
+  background: getColor('footer-bgc');
+  background-image: var(--primary-gradient), url('../images/photo.jpg');
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
 
-  @include screen("desktop") {
-   // height: 600px;
+  @include screen('desktop') {
+    // height: 600px;
   }
 }
 
 .wrapper {
-
-  @include screen("desktop") {
-  display:flex;
-  justify-content: space-between;
+  @include screen('desktop') {
+    display: flex;
+    justify-content: space-between;
   }
-    
-   // height: 100vh; 
+
+  // height: 100vh;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .banner {
-    background-image: var(--primary-gradient), url("../images/photo.jpg");
+    background-image: var(--primary-gradient), url('../images/photo.jpg');
   }
 }
 
 .wrapper_heading {
-
   max-width: 550px;
   margin-bottom: 35px;
 
   & h1 {
-    color: getColor("accent");
+    color: getColor('accent');
     @include font(48px, 600, 1.17);
-    }
+  }
 }
