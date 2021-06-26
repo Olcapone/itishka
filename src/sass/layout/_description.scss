@@ -1,0 +1,7 @@
+.description{
+    padding-top: 90px;
+
+      @include screen("desktop") {
+        padding-top: 150px; 
+        }
+}
