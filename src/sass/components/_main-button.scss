@@ -2,7 +2,7 @@
   width: 200px;
   height: 50px;
 
-  background-color: getColor("hover");
+  background-color: getColor("primary");
   color: getColor("accent");
 
   @include font(16px, 500, 1.88);
@@ -15,10 +15,16 @@
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+   &:hover,
+     &:focus {
+       background-color: getColor("hover");
+       outline: none;
+     }
 
-  .custom-information & {
-    align-self: center;
-  }
+//   .custom-information & {
+//     align-self: center;
+//   }
   .wrapper & {
     width: 100%;  
     margin-top: 20px;
@@ -26,15 +32,15 @@
     padding-right: $menu-space;
   }
 
-  .subscribe & {
-    @include aligh(flex, center);
-    padding-left: 29px;
+//   .subscribe & {
+//     @include aligh(flex, center);
+//     padding-left: 29px;
 
-    @media screen and (max-width: 1199px) {
-      margin-top: 20px;
-    }
-    @media screen and (min-width: 1200px) {
-      margin-left: 12px;
-    }
-  }
+//     @media screen and (max-width: 1199px) {
+//       margin-top: 20px;
+//     }
+//     @media screen and (min-width: 1200px) {
+//       margin-left: 12px;
+//     }
+//   }
 }
