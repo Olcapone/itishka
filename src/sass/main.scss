@@ -18,6 +18,9 @@
 //components
 
 @import "./components/burger-menu";
+@import "./components/custom-form";
+@import "./components/main-button";
 
 
-@import './header';
+@import './layout/header';
+@import './layout/hero'

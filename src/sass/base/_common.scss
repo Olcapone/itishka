@@ -27,8 +27,8 @@ button {
 }
 
 body {
-  font-family: "Roboto", Arial, sans-serif;
-  @include font(12px, 700, 1.14);
+  font-family: "Roboto", sans-serif;
+  @include font(12px, 400, 1.14);
   letter-spacing: 0.03em;
 }
 // .accent--color--link,

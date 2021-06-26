@@ -1,9 +1,6 @@
 :root {
   --transition-menu: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --primary-gradient: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
+  --primary-gradient: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.20))
 }
 
 $big-space: 94px;
@@ -13,6 +10,7 @@ $menu-space: 32px;
 $colors: (
   "primary": #757575,
   "accent": #ffffff,
+  "selectory-accent":rgba(100%, 0, 0, 0.8),
   "hover": #0000cd,
   "heading": #000000,
   "text": #212121,
