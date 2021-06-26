@@ -1,7 +1,62 @@
-.description{
-    padding-top: 90px;
+.description {
+  padding-top: 60px;
 
-      @include screen("desktop") {
-        padding-top: 150px; 
-        }
+  & p {
+    @include font(22px, 300, 1.45);
+    padding-bottom: 30px;
+  }
+
+  @include screen('desktop') {
+    padding-top: 150px;
+  }
+}
+
+.description_history {
+  // max-width: 640px;
+  text-align: center;
+
+  @include font(30px, 600, 1.23);
+
+  @include screen('desktop') {
+    // max-width: 960px;
+  }
+}
+
+.description_list {
+  @include screen('desktop') {
+    @include aligh(flex, center);
+  }
+}
+
+.description_item {
+  @include screen('desktop') {
+    width: 360px;
+  }
+}
+
+.description_item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+  }
+}
+
+.description_text {
+  @include font(14px, 300, 1.45);
+
+  @include screen('desktop') {
+    @include font(18px, 300, 1.55);
+  }
+}
+
+.decor {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  width: 100%;
+
+  background-color: getColor('primary');
+  height: 2px;
+  opacity: 0.5;
 }
