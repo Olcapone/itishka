@@ -1,35 +1,38 @@
 .description {
   padding-top: 60px;
 
-  & p {
-    @include font(22px, 300, 1.45);
-    padding-bottom: 30px;
-  }
-
-  @include screen('desktop') {
+  @media screen and (min-width: 1199px) {
     padding-top: 150px;
   }
 }
 
+.description_introduction {
+  @include font(22px, 300, 1.45);
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 1199px) {
+    @include font(26px, 300, 1.45);
+    max-width: 960px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .description_history {
-  // max-width: 640px;
   text-align: center;
 
   @include font(30px, 600, 1.23);
-
-  @include screen('desktop') {
-    // max-width: 960px;
-  }
 }
 
-.description_list {
-  @include screen('desktop') {
+@media screen and (min-width: 768px) {
+  .description_list {
     @include aligh(flex, center);
+    justify-content: center;
+    padding-bottom: 15px;
   }
-}
 
-.description_item {
-  @include screen('desktop') {
+  .description_item {
     width: 360px;
   }
 }
@@ -44,10 +47,10 @@
 }
 
 .description_text {
-  @include font(14px, 300, 1.45);
+  @include font(12px, 400, 1.45);
 
-  @include screen('desktop') {
-    @include font(18px, 300, 1.55);
+  @media screen and (min-width: 768px) {
+    @include font(16px, 300, 1.55);
   }
 }
 
@@ -59,4 +62,20 @@
   background-color: getColor('primary');
   height: 2px;
   opacity: 0.5;
+}
+
+.description_process {
+  padding-top: 30px;
+  padding-bottom: 15px;
+
+  & h2 {
+    @include font(30px, 600, 1.23);
+    margin-bottom: 75px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      @include font(38px, 500, 1.17);
+      margin-bottom: 90px;
+    }
+  }
 }

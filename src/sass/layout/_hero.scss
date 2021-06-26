@@ -12,7 +12,7 @@
 }
 
 .wrapper {
-  @include screen('desktop') {
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
   }
@@ -34,7 +34,7 @@
     color: getColor('accent');
     @include font(32px, 500, 1.17);
 
-    @include screen('desktop') {
+    @media screen and (min-width: 768px) {
       @include font(48px, 600, 1.17);
     }
   }
