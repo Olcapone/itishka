@@ -1,7 +1,7 @@
 .free-registration {
 
     background-color: getColor('secondary-bgc');
-    
+    border-bottom: 1px solid getColor('fill-icon');
     
         @include screen("desktop") {
         position: relative;

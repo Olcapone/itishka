@@ -24,10 +24,14 @@
                     width: 100%;
                   }
 
-                    .navigation &,
-                    .footer & {
+                    .navigation & {
                       justify-content: center;
-                      //flex-direction: row;
+                    }
+
+                    .other-products &{
+                      @include aligh(flex, center);
+                      flex-direction: column;
+                      justify-content: center;
                     }
         }
  }
