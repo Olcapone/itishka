@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "sourseWP":"images/keyboard.webp 1x ",
+    "sourseJPG":"images/keyboard.jpg 1x ",
+    "image": "https://static.tildacdn.com/tild3064-6162-4532-a565-383330393636/IT.jpg",
+    "imageName": "keyboard",
+    "name": " QA online",
+    "description": "Базовый курс тестирования ПО. На курсе вы научитесь правильно тестировать web, mobile приложения и получите необходимые знания для получения успешной работы",
+    "quantityLesson": 10,
+    "frequency": 2,
+    "duration": 2.5,
+    "newPrice": 4000,
+    "oldPrice": 6000
+  },
+ {
+    "id": "2",
+    "sourseWP":"./images/keyboard.webp 1x ",
+    "sourseJPG":"./images/keyboard.jpg 1x ",
+    "image": "https://static.tildacdn.com/tild3339-3234-4339-a666-633430626632/smm-.png",
+    "imageName": "social media icons",
+    "name": " SMM online",
+    "description": "Базовый курс для новичков <br> На курсе вы узнаете все секреты по smm, научитесь настраивать таргетированную рекламу и многое другое!",
+    "quantityLesson": 8,
+    "frequency": 2,
+    "duration": 2,
+    "newPrice": 3000,
+    "oldPrice": 4500
+  },
+
+
+]
