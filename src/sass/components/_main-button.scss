@@ -41,6 +41,17 @@
                     }
               }
 
+               .other-products & { 
+                      width: 100%;
+                 @media screen and (min-width: 767px) {
+                      @include font(14px, 500, 1.88);
+                 }
+
+                 @media screen and (min-width: 1200px) {
+                      width: 150px;
+                 }
+              }
+
   //   .subscribe & {
   //     @include aligh(flex, center);
   //     padding-left: 29px;
