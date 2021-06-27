@@ -1,23 +1,24 @@
 <section class ="other-products">
     <div class ="container">
-    <h2><a class ="link" href ="#">Онлайн курсы</a></h2>
+    <h2 class="other-products__heading"><a class ="link" href ="#">Онлайн курсы</a></h2>
     <p class ="visually-hidden">Выберите интересующий вас курс и запишитесь.</p>
 
      <ul class="list other-products__list card_list-js">
 
-                <li class="menu__item"> 
+                <li class="other-products__item"> 
                     <a class = "link" href="#">
                         <article class="card">
-                        <picture class="card__image">
-                                <source srcset="images/keyboard.webp 1x "
-                                    type="image/webp" media="(min-width: 1200px)">
-                                <source srcset="images/keyboard.jpg 1x "
-                                    media="(min-width: 1200px)">
-                                <img
-                                    src="images/keyboard.jpg"
-                                    alt="keyboard"   />
-            </picture>
-
+                            <div class = "card__thumb">
+                                <picture class="card__image">
+                                    <source srcset="./images/keyboard.webp 1x"
+                                            type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/keyboard.jpg 1x "
+                                            media="(min-width: 1200px)">
+                                            <img
+                                            src="images/keyboard.jpg"
+                                            alt="keyboard"   />
+                                </picture>
+                            </div>
                  <div class="card__content"> 
                         <h3 class="card__name">QA online</h3>
                         <p class="card__description">Базовый курс тестирования ПО. На курсе вы научитесь правильно тестировать web,
@@ -28,30 +29,32 @@
                                         <li><strong>Частота</strong>: 2 раза в неделю </li>
                                         <li><strong>Длительность урока</strong>: 2.5 часа </li>
                             </ul> 
-                                        <p>4000 грн<span>6000 грн</span></p>
-              </div>
-              
+                                        <p class = "card__price">4000 грн.<span>6000 грн.</span></p>
+                    <div class = "card__subscribe">
                                     <button class = "main-button">Записаться</button>
                                     <button class = "main-button">Подробнее</button>
+                    </div>                
+                </div>                       
             </article>
         </a>
         </li>
 
-        <li class="menu__item"> 
+        <li class="other-products__item"> 
            <a class = "link" href="#">
              <article class="card">
-             <picture>
+                <div class = "card__thumb">
+                        <picture class="card__image">
                                 <source srcset="./images/smm.webp 1x"
-                                    type="image/webp" media="(min-width: 1200px)">
+                                        type="image/webp" media="(min-width: 1200px)">
                                 <source srcset="./images/smm.jpg 1x "
-                                    media="(min-width: 1200px)">
+                                        media="(min-width: 1200px)">
                                 <img
-                                    src="./images/smm.jpg"
-                                    alt="social media icons"
-                                    class="card__image"
-                                    />
-            </picture>
-
+                                        src="./images/smm.jpg"
+                                        alt="social media icons"
+                                        
+                                                />
+                        </picture>
+                </div>
                  <div class="card__content"> 
                         <h3 class="card__name"> SMM online</h3>
                         <p class="card__description"> Базовый курс для новичков <br> На курсе вы узнаете все секреты по smm, 
@@ -62,44 +65,49 @@
                                         <li><strong>Частота</strong>: 2 раза в неделю </li>
                                         <li><strong>Длительность урока</strong>: 2 часа </li>        
                             </ul>
-                                        <p>3000 грн<span>4500 грн</span></p>
-              </div>
-
+                                        <p class = "card__price">3000 грн.<span>4500 грн.</span></p>
+              
+                            <div class = "card__subscribe">
                                     <button class = "main-button">Записаться</button>
                                     <button class = "main-button">Подробнее</button>
+                           </div> 
+                    </div>
             </article>
         </a>
         </li>
               
                                 
 
-                <li class="menu__item"><a class = "link" href ="#">
+                <li class="other-products__item"><a class = "link" href ="#">
                         <article class="card">
-                            <picture>
-                                 <source srcset="./images/coach.webp 1x "
-                                    type="image/webp" media="(min-width: 1200px)">
-                                <source srcset="./images/coach.jpg 2x " 
-                                    media="(min-width: 1200px)">
-                                <img src="./images/coach.jpg" 
-                                     alt="coach"  
-                                     class="card__image"/> 
-                            </picture>
-
-                            <div class="card__content">
-                                    <h3 class="card__name">  QA + </h3> 
-                                    <p  class="card__description">  Коучинг по трудоустройству. <br> Пройдите репетицию собеседования в нашей школе. 
-                                         Получите feed-back от технического специалиста об уровне ваших знаний и бесценные советы по трудоустройству в IT.</p>
-                                    
-                                    <ul class ="card__detail list">
-                                        <li><strong>Длительность тех. коучинга:</strong>: 2 часа </li>
-                                        <li><strong>Длительность доп. коучинга:</strong>: 1 час </li>
-                                    </ul>
-
-                                    <p>2200 грн<span>3800 грн</span></p>
+                            <div class = "card__thumb">
+                                <picture class="card__image">
+                                    <source srcset="./images/coach.webp 1x "
+                                        type="image/webp" media="(min-width: 1200px)">
+                                    <source srcset="./images/coach.jpg 2x " 
+                                        media="(min-width: 1200px)">
+                                    <img src="./images/coach.jpg" 
+                                        alt="coach"  
+                                        /> 
+                                </picture>
                             </div>
-                                    <button class = "main-button">Записаться</button>
-                                    <button class = "main-button">Подробнее</button>
-                                 
+                                <div class="card__content">
+                                        <h3 class="card__name">  QA + </h3> 
+                                        <p  class="card__description">  Коучинг по трудоустройству. <br> Пройдите репетицию собеседования в нашей школе. 
+                                            Получите feed-back от технического специалиста об уровне ваших знаний и бесценные советы по трудоустройству в IT.</p>
+                                        
+                                        <ul class ="card__detail list">
+                                            <li><strong>Длительность тех. коучинга:</strong>: 2 часа </li>
+                                            <li><strong>Длительность доп. коучинга:</strong>: 1 час </li>
+                                        </ul>
+
+                                        <p class = "card__price">2200 грн.<span>3800 грн.</span></p>
+                                
+                                    <div class = "card__subscribe">
+                                        <button class = "main-button">Записаться</button>
+                                        <button class = "main-button">Подробнее</button>
+                                    </div>
+                                </div>     
                             </article>
                 </a> 
     </li>

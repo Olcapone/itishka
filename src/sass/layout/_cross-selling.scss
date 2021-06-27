@@ -1,26 +1,87 @@
-.menu__item {
-    position: relative;
-    overflow: hidden;
-    background-color: #fff;
-    -webkit-transition: all 0.2s linear;
+.other-products {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        background-color: getColor('secondary-bgc');
+        color: getColor("heading");
+        @include font(12px, 400, 1.55);
+
+            a,
+            a:visited {
+                color: getColor("heading");
+            }
+}
+
+.other-products__heading{
+        
+        margin-bottom: 30px;
+   
+        @include font(30px, 600, 1.35);
+        color: getColor("heading");
+        text-align: center;
+        text-decoration: none;  
+}
+
+.other-products__list {
+    
+        @media screen and (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+        }
+}
+
+.other-products__item {
+
+    max-width: 420px;
+    
+    height: 100%;
+      
+    background-color: getColor("accent");
+    border-radius: 0px 0px 4px 4px;
     transition: all 0.2s linear;
 
-        &:not(:last-child) {
-            margin-bottom: 40px;
-    }
+                 @media screen and (max-width: 767px) {
 
+                        &:not(:last-child) {
+                            margin-bottom: 40px;
+                        }
+                 }
+                   
+                    @media screen and (min-width: 768px) {
+                            flex-basis: calc(100% / 2 - 10px);
+                            // max-width: 250px; 
+                            
 
+                                 &:nth-child(-2n+1){
+                                    margin-right: 20px;
+                                    margin-bottom: 20px;
+                                 }
+                          
+                    }
+
+                     @media screen and (min-width: 1199px) {
+                            max-width: 300px;
+                            
+
+                            &:not(:last-child) {
+                                margin-right: 20px;
+                            }
+                     }
 }
-
 
 .card {
-    position: relative;
-    z-index: 0;
-    width: 100%;
+    @include aligh(flex, center);
+    flex-direction: column;
 }
 
-.card__image {
-    position: absolute;    
+ .card__thumb{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+ }
+
+ .card__image{
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +90,75 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 2;
-    -webkit-transition: opacity 0.1s linear;
-    transition: opacity 0.1s linear;
+ }
+
+.card__content {
+    
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 27px 30px;
+
+            @media screen and (min-width: 768px) {
+               //max-width: 200px;
+            }
+            @media screen and (min-width: 1199px) {
+                max-width: 300px;
+            }
 }
+
+.card__name {
+    @include font(16px, 700, 1.35);
+}
+
+.card__description {   
+    padding-top: 10px;
+    margin-bottom: auto;
+    text-align: justify;   
+}
+
+.card__price {
+    margin-top: 20px;
+    @include font(18px, 400, 1.35);
+
+        & span {
+            margin-left: 10px;
+            color: getColor("fill-icon");
+            text-decoration: line-through;
+        }
+}
+
+.card__subscribe {
+    width: 100%;
+    align-self: center;
+    margin-top: 30px;
+
+                    & button:last-child {
+                            background-color: getColor('hover');
+                                &:hover,
+                                &:focus {
+                                            background-color: getColor('primary');
+                                            outline: none;
+                                        }
+                    }
+
+                @media screen and (max-width: 1199px){
+                    & button:not(:last-child) {
+                            margin-bottom: 10px;
+                    }  
+                }
+
+                 @media screen and (min-width: 1200px) {
+                     display:flex;
+
+                     & button:not(:last-child) {
+                            margin-right: 20px;
+                    }  
+
+            
+                 }
+
+    }
+
+
