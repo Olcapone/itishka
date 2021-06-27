@@ -36,7 +36,7 @@
      padding-top: $menu-space;
      padding-bottom: $menu-space;
      transition: var(--transition-menu);
-    @include font(24px, 500, 1.17);
+     @include font(24px, 500, 1.17);
 
      &,
      &:visited {
@@ -45,6 +45,7 @@
        font-weight: 500;
        letter-spacing: 0.02em;
      }
+     
      &:hover,
      &:focus {
        color: getColor("hover");
