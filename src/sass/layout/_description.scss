@@ -8,14 +8,13 @@
 
 .description_introduction {
   @include font(22px, 300, 1.45);
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 40px;
 
   @media screen and (min-width: 1199px) {
     @include font(26px, 300, 1.45);
     max-width: 960px;
-
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -54,16 +53,6 @@
   }
 }
 
-.decor {
-  margin-top: 14px;
-  margin-bottom: 14px;
-  width: 100%;
-
-  background-color: getColor('primary');
-  height: 2px;
-  opacity: 0.5;
-}
-
 .description_process {
   padding-top: 30px;
   padding-bottom: 15px;
@@ -78,4 +67,74 @@
       margin-bottom: 90px;
     }
   }
+
+  & h3 {
+    margin-left: 20px;
+    margin-bottom: 15px;
+
+    @include font(18px, 600, 1.35);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include aligh(flex, center);
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.description_process_item {
+  position: relative;
+
+  &:not(:last-child) {
+    padding-bottom: 75px;
+  }
+  & p {
+    padding-left: 20px;
+    @include font(24px, 600, 1.23);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 760px;
+  }
+}
+// Линии
+
+.decor {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  width: 100%;
+
+  background-color: getColor('primary');
+  height: 2px;
+  opacity: 0.5;
+}
+
+.decor_scale {
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: 7px;
+  right: 0;
+  bottom: 0;
+
+  margin-top: 20px;
+  background: getColor('primary');
+}
+
+.decor_circle {
+  width: 12px;
+  height: 12px;
+
+  position: absolute;
+  padding: 4px 0;
+  margin-top: 4px;
+  margin-left: 2px;
+
+  border: 2px solid getColor('primary');
+  border-radius: 50%;
+}
+
+.orange {
+  background-color: getColor('hover');
+  border: 2px solid getColor('hover');
 }
