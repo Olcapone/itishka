@@ -33,6 +33,14 @@
     border-radius: 30px;
   }
 
+   .free-registration & {
+    border-radius: 30px;
+   
+        @media screen and (max-width: 767px) {
+        width: 100%;
+        }
+  }
+
   //   .subscribe & {
   //     @include aligh(flex, center);
   //     padding-left: 29px;

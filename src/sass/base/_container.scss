@@ -5,33 +5,29 @@
    margin: 0px auto;
 
 
-   @include screen("mobi") {
-     width: 480px;
-     
-   }
+        @include screen("mobi") {
+          width: 480px;
+          
+        }
 
-   @include screen("tablet") {
-     width: 768px;
+        @include screen("tablet") {
+          width: 768px;
+        }
 
-//     .footer & {
-//       display: flex;
-//       flex-direction: column;
-//     }
-   }
+        @include screen("desktop") {
+                  width: 1200px;
 
-//   @media screen and (max-width: 1199px) {
-//     .footer & {
-//       text-align: center;
-//     }
-//   }
+                  .free-registration & {
+                    display: flex;
+                    margin: 0px;
+                    padding: 0px;
+                    width: 100%;
+                  }
 
-   @include screen("desktop") {
-     width: 1200px;
-
-      .navigation &,
-      .footer & {
-        justify-content: center;
-        //flex-direction: row;
-      }
-   }
+                    .navigation &,
+                    .footer & {
+                      justify-content: center;
+                      //flex-direction: row;
+                    }
+        }
  }
