@@ -91,7 +91,7 @@
             margin-left: auto;
             margin-right: auto;
 
-            background-color: getColor('icon-on-dark');
+            background-color: getColor('placeholder-bgc');
 
                         h3 {
                           @include font(30px, 600, 1.23);
@@ -119,8 +119,8 @@
            margin-top: 30px;
            padding-left: 0px;
 
-           background-color: getColor('icon-on-dark');
-           border: 1px solid getColor('icon-on-dark'); 
+           background-color: getColor('placeholder-bgc');
+           border: 1px solid getColor('placeholder-bgc'); 
            border-bottom: 1px solid getColor('fill-icon');
            border-radius: 0px;
       }
