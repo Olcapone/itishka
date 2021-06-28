@@ -1,37 +1,41 @@
-/* Устанавливаем индекс слайда по умолчанию */
-let slideIndex = 1;
-showSlides(slideIndex);
+const feedbackEl = document.querySelector('.js-gallery');
+const slideEl = document.querySelector('.slider__image');
 
-/* Увеличиваем индекс на 1 — показываем следующий слайд*/
-function nextSlide() {
-    showSlides(slideIndex += 1);
-}
+feedbackEl.addEventListener('click', showSlides);
 
-/* Уменьшает индекс на 1 — показываем предыдущий слайд*/
-function previousSlide() {
-    showSlides(slideIndex -= 1);  
-}
 
-/* Устанавливаем текущий слайд */
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-/* Функция перелистывания */
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slider__item");
+function showSlides(e) {
     
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
+    if (e.target.nodeName == 'svg') {
+    
+        
+
+    document.addEventListener('keydown', OnLeftOrRight);
+
+   function OnLeftOrRight (e){
+
+   let someIndex;
+   const currentId = slideEl.findIndex(el =>  el.src === slideEl.src);
   
-  /* Проходим по каждому слайду в цикле for */
-    for (let slide of slides) {
-        slide.style.display = "none";
-    }   
-    slides[slideIndex - 1].style.display = "block"; 
+    if(e.key === 'ArrowLeft'){
+        someIndex = currentId - 1;
+            if (someIndex < 0)  someIndex = slideEl.length - 1;
+             }
+
+   else if (e.key === 'ArrowRight'){
+        someIndex = currentId + 1;
+          if (someIndex == slideEl.length)    someIndex = 0;              
+   }
+  
+     else if(typeof someIndex === 'undefined')  someIndex = currentId;
+
+  //refs.modalImage.src = images[someIndex].original;
+ 
+};
 }
+}
+
+
+
+
+
