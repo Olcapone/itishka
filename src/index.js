@@ -3,13 +3,9 @@ import './sass/main.scss';
 import './js/mobile-menu.js';
 import './js/slider-setting.js';
 
-// шаблонная строка на карточки курсов
+import './js/faq.js';
 
-// import template from './productList.hbs';
-// const products = require('./courses.json');
 
-// const cardList = document.querySelector(".card_list-js");
-// cardList.insertAdjacentHTML('afterbegin', template(products));
 
 
 

@@ -84,6 +84,7 @@
   top: 5%;
   right: 5%;
   justify-content: center;
+  z-index: 10;
 
   background-color: getColor('accent');
   border: none;
@@ -92,5 +93,9 @@
   &:focus > svg,
   &:hover > svg {
     fill: getColor('hover');
+  }
+
+  .question &{
+    top: 28%;
   }
 }
