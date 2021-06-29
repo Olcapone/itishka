@@ -66,39 +66,21 @@
 }
 
 .question__about {
-  max-width: 240px;
-
-  @media screen and (min-width: 420px) {
-    max-width: 290px;
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: 500px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 550px;
-  }
+  width: 80%;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  max-width: 300px;
+  width: 100%;
   padding-left: 18px;
   background-color: white;
   display: none;
   overflow: hidden;
   @include font(12px, 300, 1.45);
+}
 
-  @media screen and (min-width: 768px) {
-    @include font(14px, 300, 1.45);
-    max-width: 500px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    @include font(16px, 300, 1.55);
-    max-width: 550px;
-  }
+.question__answer {
+  width: 80%;
 }
 
 .question__icon-close {
