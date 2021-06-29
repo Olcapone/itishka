@@ -6,12 +6,12 @@
   
     menuBtnRef.addEventListener("click", () => {
 
-      mobileMenuRef.classList.add("is-open");
+      mobileMenuRef.classList.toggle("is-open");
  
     })
 
     mobileBtnClose.addEventListener('click', () => {
-      mobileMenuRef.classList.remove("is-open");
+      mobileMenuRef.classList.toggle("is-open");
     
     });
   })()
