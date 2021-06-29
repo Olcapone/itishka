@@ -1,39 +1,60 @@
-const feedbackEl = document.querySelector('.js-gallery');
-const slideEl = document.querySelector('.slider__image');
-
-feedbackEl.addEventListener('click', showSlides);
-
-
-function showSlides(e) {
-    
-    if (e.target.nodeName == 'svg') {
-    
-        
-
-    document.addEventListener('keydown', OnLeftOrRight);
-
-   function OnLeftOrRight (e){
-
-   let someIndex;
-   const currentId = slideEl.findIndex(el =>  el.src === slideEl.src);
-  
-    if(e.key === 'ArrowLeft'){
-        someIndex = currentId - 1;
-            if (someIndex < 0)  someIndex = slideEl.length - 1;
-             }
-
-   else if (e.key === 'ArrowRight'){
-        someIndex = currentId + 1;
-          if (someIndex == slideEl.length)    someIndex = 0;              
-   }
-  
-     else if(typeof someIndex === 'undefined')  someIndex = currentId;
-
-  //refs.modalImage.src = images[someIndex].original;
- 
-};
+const refs = {
+  galleryEl: document.querySelector('.js-gallery'),
 }
+
+
+document.addEventListener('keydown', OnLeftOrRight);
+refs.galleryEl.addEventListener('click', OnLeftOrRight);
+
+
+function OnLeftOrRight(n) {
+
+  const someDots = n.target.dataset.action;
+  
+    
+  if (n.key === 'ArrowLeft' || someDots === 'prev') previousSlide();
+
+      else if (n.key === 'ArrowRight' || someDots === 'next') nextSlide();
 }
+
+/* Устанавливаем индекс слайда по умолчанию */
+let slideIndex = 1;
+showSlides(slideIndex);
+
+/* Увеличиваем индекс на 1 — показываем следующий слайд*/
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
+
+/* Уменьшает индекс на 1 — показываем предыдущий слайд*/
+function previousSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+/* Устанавливаем текущий слайд */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+/* Функция перелистывания */
+function showSlides(n) {
+    let i;
+  let slides = document.getElementsByClassName("slider__item");
+   
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+  
+  /* Проходим по каждому слайду в цикле for */
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }   
+    slides[slideIndex - 1].style.display = "block"; 
+}
+
 
 
 

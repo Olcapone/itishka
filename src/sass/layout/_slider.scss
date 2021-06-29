@@ -24,16 +24,12 @@
   padding-bottom: 170px;
 }
 
-.slider__item {
-  display: none;
-}
-
 .slider__image {
   margin-bottom: 29px;
   margin-right: auto;
   margin-left: auto;
-  width: 85px;
-  height: 85px;
+  width: 160px;
+  height: 160px;
 
   border-radius: 50%;
 }
@@ -49,30 +45,6 @@
   // padding: 40px 50px 20px 50px;
   // background-color: #fafafa;
   z-index: 1;
-
-  // &::before {
-  //   content: '';
-  //   position: absolute;
-  //   left: 71px;
-  //   top: 28px;
-  //   width: 54px;
-  //   height: 40px;
-  //   background-image: url('../images/quote.png');
-  //   z-index: -1;
-  // }
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -34px;
-    left: 50%;
-    width: 32px;
-    height: 4px;
-    text-decoration: dotted;
-    transform: translateX(-50%);
-    background-image: url('../images/dots.png');
-    background-size: contain;
-  }
 }
 
 .slider__text {
@@ -86,12 +58,13 @@
   margin-bottom: 30px;
 }
 
-.slider__arrow-left {
+.previous {
   position: absolute;
   top: 50%;
   left: 5%;
   z-index: 10;
   transform: rotate(180deg);
+  cursor: pointer;
 
   @include item-size(30px, 30px);
   & > svg {
@@ -109,11 +82,12 @@
   }
 }
 
-.slider__arrow-right {
+.next {
   position: absolute;
   top: 48%;
   right: 5%;
   z-index: 10;
+  cursor: pointer;
 
   @include item-size(30px, 30px);
   & > svg {
@@ -128,6 +102,33 @@
   &:focus > svg,
   &:hover > svg {
     fill: getColor('hover');
+  }
+}
+.decor_dots_container {
+  position: absolute;
+  top: 75%;
+  left: 48%;
+  display: flex;
+
+  padding: 10px;
+}
+
+.decor_dots,
+.decor_dots_next,
+.decor_dots_prev {
+  width: 6px;
+  height: 6px;
+  background-color: getColor('primary');
+  border-radius: 50%;
+
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: getColor('hover');
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -171,7 +172,7 @@
   }
 
   .slider__text {
-    @include font(14px, 500, 30px);
+    @include font(18px, 300, 1.55);
     padding-left: 20px;
     padding-right: 47px;
     letter-spacing: 0.04em;
@@ -218,3 +219,27 @@
     @include font(20px, 500, 37px);
   }
 }
+
+// &::before {
+//   content: '';
+//   position: absolute;
+//   left: 71px;
+//   top: 28px;
+//   width: 54px;
+//   height: 40px;
+//   background-image: url('../images/quote.png');
+//   z-index: -1;
+// }
+
+// &::after {
+//   content: '';
+//   position: absolute;
+//   bottom: -34px;
+//   left: 50%;
+//   width: 32px;
+//   height: 4px;
+//   text-decoration: dotted;
+//   transform: translateX(-50%);
+//   background-image: url('../images/dots.png');
+//   background-size: contain;
+// }

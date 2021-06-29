@@ -1,18 +1,17 @@
 <section class="customer-reviews js-gallery">
     
-            <div class="slider__arrow-left ">
-                            <svg >
+        <a class="previous" >
+                            <svg data-action="prev">
                                 <use href="./images/sprite.svg#icon-arrows_icon"></use>
                             </svg>
-            </div>
+                        </a>
 
     <div class="container"> 
         
         <h2>Отзывы наших учеников</h2>
         <ul class="slider list">
                
-
-                <li class="slider__item">               
+                <li class="slider__item ">               
 
                 <div class = "slider__thumb">
                  <img src="/images/feedb_one.jpg" alt="Client photo" class="slider__image">
@@ -21,7 +20,7 @@
                     <p class="slider__text">Большое спасибо вам! Преподаватель объяснял все очень доходчиво и преподносил информацию круто и интересно.</p>
                 </div>
             </li>
-            <li class="slider__item">
+            <li class="slider__item  ">
                 <div class="slider__thumb">
                  <img src="/images/feedb_two.jpg" alt="Client photo" class="slider__image"> 
                 </div>
@@ -30,7 +29,7 @@
                     С интересом слушала все занятия и уже в течении двух месяцев нашла работу!</p>
                 </div>    
             </li>
-            <li class="slider__item">
+            <li class="slider__item  ">
                 <div class="slider__thumb">
                  <img src="/images/luke-watk.jpeg" alt="Client photo" class="slider__image"> 
                 </div>                 
@@ -40,11 +39,17 @@
                 </div>   
             </li>
         </ul>
+    <div class="decor_dots_container">
+        <div class="decor_dots_prev" data-action="prev"></div>
+        <div class="decor_dots" data-action="next"></div>
+        <div class="decor_dots_next" data-action="next"></div>
     </div>
 
-    <div class="slider__arrow-right">
-        <svg>
+    </div>
+
+<a class="next" >
+        <svg data-action="next">
             <use href="./images/sprite.svg#icon-arrows_icon"></use>
         </svg>
-    </div>
+    </a>
 </section>
