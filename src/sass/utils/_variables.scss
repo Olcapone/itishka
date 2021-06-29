@@ -10,10 +10,11 @@ $menu-space: 32px;
 $colors: (
   "primary": #1c21c4,
   "accent": #ffffff,
-  "selectory-accent":rgba(100%, 0, 0, 0.8),
+  "selectory-accent": rgba(100%, 0, 0, 0.8),
   "hover": #ffa600,
   "heading": #000000,
-  "secondary-bgc":rgba(210, 220, 200, 0.5),
+  "secondary-bgc": rgba(210, 220, 200, 0.5),
+  "unvisible-bgc": rgba(255, 255, 255, 0),
   "placeholder-bgc": rgba(210, 220, 200, 0),
 
   "text": #212121,
