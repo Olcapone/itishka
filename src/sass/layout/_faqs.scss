@@ -3,6 +3,12 @@
 
      background-color: getColor('secondary-bgc');
 
+     & .container {
+       @include aligh(flex, center);
+        flex-direction: column;
+        
+     }
+
      & h2 {
          margin-bottom: 40px;
            @include font(42px, 600, 1.35);
@@ -30,10 +36,8 @@
 
 .question__list{
     max-width: 380px;
-    position: relative;
-    overflow: hidden;
-    left: 25%;
     margin-top: 60px;
+    
     border-radius: 4px;
 
     background-color: getColor('accent');
@@ -49,39 +53,85 @@
 }
 
 .question__item {
-  position: relative; 
-  padding: 25px 30px; 
-  height: 80px;
-  z-index:1;
-}
-
-
-.question__answer {
-  position: relative;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  z-index:0;
-
-  //padding: 25px 24px;
-  height: 0%;
-  width: 0%;
-  transform: translateY(-120%);
-  --transition-menu: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-}
-
-.magic {
-    transform: translateY(0%);
-    margin-bottom: 40px;
-    z-index:1;
-    height: 100%;
+    position:relative;
+    padding: 18px;
+    
+    cursor: pointer;
+    
     width: 100%;
- 
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+           
 }
 
-.magic2 {
- 
-    width: 100%;
-    height: 100%;
+.question__about {
+
+    max-width: 300px;
+
+      @media screen and (min-width: 768px){
+               
+                max-width: 500px;
+            }
+
+            @media screen and (min-width: 1200px){
+                
+                max-width: 550px;
+            }
+
 }
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    max-width: 300px;
+    padding-left: 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    @include font(12px, 300, 1.45);
+
+            @media screen and (min-width: 768px){
+                @include font(14px, 300, 1.45);
+                max-width: 500px;
+            }
+
+            @media screen and (min-width: 1200px){
+                @include font(16px, 300, 1.55);
+                max-width: 550px;
+            }
+
+    
+}
+
+.question__icon-close {
+    @include item-size(40px, 40px);
+   
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    
+    z-index: 10;
+    transform: rotate(45deg);
+
+    background-color: getColor('accent');
+    border: none;
+    transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+                &:hover > svg {
+                transform: rotate(45deg);
+                
+                background: getColor('hover');
+                fill: getColor('heading');
+                border-radius: 50%;
+
+            }
+
+}
+
+ .modal__close__icon {
+     @include item-size(40px, 40px);
+ }
+
+
