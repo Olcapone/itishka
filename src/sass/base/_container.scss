@@ -12,26 +12,34 @@
 
         @include screen("tablet") {
           width: 768px;
+
+                  .registration-repeat &{
+                              @include aligh(flex, center);
+                              flex-direction: column;
+                              justify-content: center;
+                }
         }
 
         @include screen("desktop") {
-                  width: 1200px;
+          width: 1200px;
 
                   .free-registration & {
-                    display: flex;
-                    margin: 0px;
-                    padding: 0px;
-                    width: 100%;
-                  }
+                              display: flex;
+                              margin: 0px;
+                              padding: 0px;
+                              width: 100%;
+                }
 
-                    .navigation & {
-                      justify-content: center;
-                    }
+                  .navigation & {
+                              justify-content: center;
+                }
 
-                    .other-products &{
-                      @include aligh(flex, center);
-                      flex-direction: column;
-                      justify-content: center;
-                    }
+                  .other-products &{
+                            @include aligh(flex, center);
+                            flex-direction: column;
+                            justify-content: center;
+                }
+                  
+                  
         }
  }
