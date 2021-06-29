@@ -54,15 +54,16 @@
 
 .question__item {
   position: relative;
-  padding: 18px;
+  padding: 25px 30px;
 
   cursor: pointer;
 
   width: 100%;
   text-align: left;
-  border: none;
+  //border: none;
   outline: none;
   transition: 0.4s;
+  border-top: 1px solid getColor('secondary-bgc');
 }
 
 .question__about {
@@ -72,7 +73,8 @@
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   width: 100%;
-  padding-left: 18px;
+  padding-left: 30px;
+  padding-bottom: 30px;
   background-color: white;
   display: none;
   overflow: hidden;
