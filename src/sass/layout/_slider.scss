@@ -78,7 +78,7 @@
 
   &:focus > svg,
   &:hover > svg {
-    fill: getColor('hover');
+    background: getColor('hover');
   }
 }
 
@@ -101,7 +101,7 @@
 
   &:focus > svg,
   &:hover > svg {
-    fill: getColor('hover');
+    background: getColor('hover');
   }
 }
 .decor_dots_container {
@@ -127,8 +127,7 @@
   &:focus,
   &:hover {
     background-color: getColor('hover');
-    width: 10px;
-    height: 10px;
+    
   }
 }
 
