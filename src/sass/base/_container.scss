@@ -4,14 +4,19 @@
    padding: 0px 15px 0px 15px;
    margin: 0px auto;
 
-
+                  .footer & {
+                              @include aligh(flex, center);
+                              flex-direction: column;
+                            //  justify-content: center;
+                                  }
         @include screen("mobi") {
           width: 480px;
+                
           
         }
 
         @include screen("tablet") {
-          width: 768px;
+          width: 640px;
 
                   .registration-repeat &{
                               @include aligh(flex, center);
