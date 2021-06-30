@@ -1,5 +1,26 @@
 .footer {
-    padding: 40px 0px;
+    @include aligh(flex, center);
+    justify-content: space-between; 
+    padding: 40px 20px;
     background-color: getColor('footer-bgc');
-   // height: 95px;
+   
+
+    @media screen and (max-width: 960px) { 
+    justify-content: center;              
+    flex-direction: column;   
+                   
+   }
+}
+
+.mobile-menu__tel {
+        color: getColor('accent');
+        @include font(14px, 600, 1.35);
+
+    @media screen and (max-width: 960px) { 
+        padding: 20px 0px;
+    }
+
+    @media screen and (min-width: 960px) { 
+        padding-right: 80px;
+    }
 }

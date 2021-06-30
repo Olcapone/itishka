@@ -12,10 +12,11 @@
 }
 
 .social-list__link {
+  position: relative;
   @include aligh(flex, center);
   justify-content: center;
-  height: 44px;
-  width: 44px;
+
+  @include item-size(33px, 33px);
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,14 +33,16 @@
 .social-link-dark {
   background-color: getColor("accent");
 }
-.social-list__icon {
-  width: 30px;
-  height: 30px;
 
-  fill: getColor("fill-icon");
+.social-list__icon {
+ @include item-size(30px, 30px);
+
+  position: absolute;
+  top: 19%;
+  left: 19%;
+
+  fill: getColor("text");
+  
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .footer & {
-    fill: getColor("text");
-  }
 }

@@ -4,11 +4,7 @@
    padding: 0px 15px 0px 15px;
    margin: 0px auto;
 
-                  .footer & {
-                              @include aligh(flex, center);
-                              flex-direction: column;
-                            //  justify-content: center;
-                                  }
+                  
         @include screen("mobi") {
           width: 480px;
                 
@@ -20,10 +16,11 @@
 
                   .registration-repeat &{
                               @include aligh(flex, center);
-                              flex-direction: column;
-                              justify-content: center;
+                              flex-direction: column;             
                 }
         }
+
+        
 
         @include screen("desktop") {
           width: 1200px;
@@ -47,4 +44,5 @@
                   
                   
         }
+
  }
