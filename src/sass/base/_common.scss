@@ -32,37 +32,3 @@ body {
   @include font(12px, 400, 1.14);
   letter-spacing: 0.03em;
 }
-// .accent--color--link,
-// .accent--color--link:visited {
-//   color: getColor("accent");
-// }
-
-// .space-sections {
-//   padding-top: 60px;
-//   padding-bottom: 60px;
-
-//   @media screen and (min-width: 1199px) {
-//     padding-top: $big-space;
-//     padding-bottom: $big-space;
-
-//     .footer & {
-//       padding-top: 60px;
-//       padding-bottom: 60px;
-//     }
-//   }
-// }
-
-// .icon-thumb {
-//   @include aligh(flex, center);
-//   justify-content: center;
-//   width: 100%;
-// }
-
-// .heading-dark-fon {
-//   color: getColor("accent");
-
-//   @include font(14px, 700, 1.17);
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-//   padding-bottom: 20px;
-// }
