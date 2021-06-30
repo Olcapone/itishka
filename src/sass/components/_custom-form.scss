@@ -153,8 +153,12 @@
               }
   }
 
+  & .custom-information {
+    margin-bottom: 20px;
+  }
+
  & .custom-form__message {
-    margin-bottom: 30px;
+    
     @include font(16px, 300, 1.45);
     color: getColor('accent');
 
@@ -169,10 +173,35 @@
       }
 }
 
+& .user-info {
+    margin-top: 30px;
+
+     @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+     }   
+}
+
+
 & .user-info__input {
   height: 56px;
   @include font(16px, 400, 1.33);
 }
+
+& .select_title {
+
+    color: getColor('accent');
+    @include font(12px, 300, 1.55);
+
+
+          @media screen and (min-width: 640px) {
+              @include font(14px, 300, 1.55);
+            }    
+}
+
+& .select_course {
+    height: 60px;
+}         
+
 
     
 }
