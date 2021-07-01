@@ -87,26 +87,36 @@
 
 .question__icon-close {
   @include item-size(40px, 40px);
+  border-radius: 50%;
 
-  position: absolute;
-  top: 20%;
-  right: 5%;
+    position: absolute;
+    top: 20%;
+    right: 5%;
 
-  z-index: 10;
-  transform: rotate(45deg);
-
-  background-color: getColor('accent');
-  border: none;
-  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-
-  &:hover > svg {
+    z-index: 10;
     transform: rotate(45deg);
 
-    background: getColor('hover');
-    fill: getColor('heading');
+    background-color: getColor('accent');
+    border: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+  &:hover > svg {
+    background: getColor('second-primary');
     border-radius: 50%;
+    
   }
+
 }
+
+.active_icon{
+    transform: rotate(0deg);
+    background: getColor('second-primary');
+    fill: getColor('heading');
+    
+
+    // transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
 
 .modal__close__icon {
   @include item-size(40px, 40px);
