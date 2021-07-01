@@ -18,7 +18,22 @@
         @include font(30px, 600, 1.35);
         color: getColor("heading");
         text-align: center;
-        text-decoration: none;  
+        border-bottom: 4px dotted black;
+}
+
+.hidden_text{
+    padding-bottom: 56px;
+    display: none;
+    text-align: center;
+    @include font(14px, 300, 1.45);
+
+          @media screen and (min-width: 640px) {
+              @include font(16px, 300, 1.55);
+            }   
+
+          @media screen and (min-width: 1200px) {
+              @include font(18px, 300, 1.55);
+            } 
 }
 
 .other-products__list {
