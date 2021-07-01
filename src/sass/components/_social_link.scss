@@ -23,10 +23,10 @@
 
   &:hover,
   &:focus {
-    background-color: getColor("hover");
-    svg {
-      fill: getColor("unvisible-bgc");
-    }
+    background: getColor("hover");
+    & svg {
+       fill: getColor("accent");
+     }
   }
 }
 
