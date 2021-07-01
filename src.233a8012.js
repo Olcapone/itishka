@@ -9,4 +9,4 @@ let t,e=document.getElementsByClassName("question__item");for(t=0;t<e.length;t++
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu.js"),require("./js/slider-setting.js"),require("./js/faq.js");
 },{"./sass/main.scss":"clu1","./js/mobile-menu.js":"sByI","./js/slider-setting.js":"eEqy","./js/faq.js":"DnZU"}]},{},["Focm"], null)
-//# sourceMappingURL=/itishka/src.2d561d7b.js.map
+//# sourceMappingURL=/itishka/src.233a8012.js.map
