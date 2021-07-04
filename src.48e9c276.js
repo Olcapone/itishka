@@ -11,4 +11,4 @@ let e=document.querySelector(".other-products__heading");e.addEventListener("cli
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu.js"),require("./js/slider-setting.js"),require("./js/faq.js"),require("./js/courses_title.js");
 },{"./sass/main.scss":"clu1","./js/mobile-menu.js":"sByI","./js/slider-setting.js":"eEqy","./js/faq.js":"DnZU","./js/courses_title.js":"AefC"}]},{},["Focm"], null)
-//# sourceMappingURL=/itishka/src.693f28e8.js.map
+//# sourceMappingURL=/itishka/src.48e9c276.js.map
